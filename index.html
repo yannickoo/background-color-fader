@@ -7,22 +7,24 @@
       html, body { height: 100%; }
     </style>
     <script>
-      document.body.style.backgroundColor = getRandomColor();
-
-      setInterval(function() {
+      document.addEventListener('DOMContentLoaded', function() {
         document.body.style.backgroundColor = getRandomColor();
-      }, 10000);
 
-      function getRandomColor() {
-        var letters = '0123456789ABCDEF'.split('');
-        var color = '#';
+        setInterval(function() {
+          document.body.style.backgroundColor = getRandomColor();
+        }, 10000);
 
-         for (var i = 0; i < 6; i++) {
-          color += letters[Math.floor(Math.random() * 16)];
+        function getRandomColor() {
+          var letters = '0123456789ABCDEF'.split('');
+          var color = '#';
+
+           for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+
+          return color;
         }
-
-        return color;
-      }
+      });
     </script>
   </head>
   <body>

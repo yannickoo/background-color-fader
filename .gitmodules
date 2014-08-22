@@ -1,0 +1,3 @@
+[submodule "vendor/randomColor"]
+	path = vendor/randomColor
+	url = https://github.com/davidmerfield/randomColor.git

@@ -14,23 +14,23 @@
         -webkit-transition: background-color 10s ease;
         -moz-transition: background-color 10s ease;
       }
-      
+
       :-webkit-full-screen body {
         cursor: none;
       }
-      
+
       :-moz-full-screen body {
         cursor: none;
       }
-      
+
       :-ms-fullscreen body {
         cursor: none;
       }
-      
+
       :full-screen body {
         cursor: none;
       }
-      
+
       :fullscreen body {
         cursor: none;
       }
@@ -47,7 +47,7 @@
             luminosity: 'bright'
           });
         }, 5000);
-        
+
         var fullscreen = function(element) {
           if (element.requestFullscreen) {
             element.requestFullscreen();
@@ -62,7 +62,7 @@
             element.msRequestFullscreen();
           }
         }
-        
+
         document.addEventListener('click', function() {
           fullscreen(document.documentElement);
         });
